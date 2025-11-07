@@ -310,10 +310,21 @@ footer{
 /* Small screens */
 @media (max-width:900px){
   .container{ grid-template-columns:1fr; padding:12px; }
-  .sidebar{ order:0; max-height:40vh; }
+  /* Make sidebars flow vertically on small screens and avoid internal fixed heights */
+  .sidebar{ order:0; max-height:none; height:auto; overflow:visible; }
+  .right-sidebar{ order:2; padding-top:8px; }
   .content{ order:1; }
   header h1{ font-size:1.05rem; }
   .header-logo-left, .header-logo-right{ display:none; }
+
+  /* Tag list becomes horizontal, scrollable chips on mobile */
+  .tag-list{ flex-direction:row; gap:8px; overflow-x:auto; padding:8px 4px; -webkit-overflow-scrolling:touch; }
+  .tag-list::-webkit-scrollbar{ height:6px; }
+  .tag-list::-webkit-scrollbar-thumb{ background:rgba(0,0,0,0.12); border-radius:6px; }
+  .tag-btn{ white-space:nowrap; display:inline-flex; align-items:center; min-width:unset; padding:8px 12px; border-radius:999px; }
+
+  /* Ensure titles list isn't tiny on mobile */
+  .titles-list{ max-height:none; }
 }
 
 /* Accessibility & reduced motion */
