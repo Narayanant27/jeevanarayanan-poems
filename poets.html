@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>கவிஞர்கள் | Tamil Poets</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Serif+Tamil:wght@400;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>கவிஞர்கள் 👩‍🎨</h1>
+    <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+    <select id="fontSelect" class="font-select" title="Choose font" aria-label="Choose font">
+      <option value="noto-sans">Noto Sans Tamil</option>
+      <option value="noto-serif">Noto Serif Tamil</option>
+      <option value="baloo">Baloo 2</option>
+    </select>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="poets.html" class="active">👩‍🎨 Poets</a>
+      <a href="about.html">ℹ️ About</a>
+    </nav>
+  </header>
+
+  <main class="container" id="poetList"></main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="foot-left">© <span id="year">2025</span> ஜீவா நாராயணன்</div>
+      <div class="foot-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/poets.js"></script>
+</body>
+</html>

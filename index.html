@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ஜீவா நாராயணன் கவிதைகள் ✍️</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;700&family=Noto+Serif+Tamil:wght@400;700&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <header>
+   <a href="index.html">
+    <img src="images/sky.png" alt="Book Cover" class="header-logo-left">
+    
+  </a>
+
+  <h1>ஜீவா நாராயணன் கவிதைகள் ✍️</h1>
+
+  <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+  <label for="fontSelect" class="visually-hidden">Choose font</label>
+  <select id="fontSelect" class="font-select" title="Choose font" aria-label="Choose font">
+    <option value="noto-sans">Noto Sans Tamil</option>
+    <option value="noto-serif">Noto Serif Tamil</option>
+    <option value="baloo">Baloo 2</option>
+  </select>
+
+  <nav>
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="poets.html">👩‍🎨 Poets</a>
+    <a href="about.html">ℹ️ About</a>
+  </nav>
+  
+</header>
+
+
+  <main class="container">
+    <section class="sidebar" id="poemList">
+      <div class="search-area">
+        <input type="text" id="searchInput" placeholder="🔍 தேடல் (Search)">
+        <select id="sortSelect">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+          <option value="a-z">Title A→Z</option>
+          <option value="z-a">Title Z→A</option>
+        </select>
+      </div>
+      <div id="titles" class="titles-list"></div>
+    </section>
+
+    <section class="content" id="poemDetail">
+      <p class="placeholder">ஒரு கவிதையைத் தேர்ந்தெடுக்கவும்...</p>
+    </section>
+    
+    <section class="right-sidebar">
+      <div class="group-title">Tags</div>
+      <div id="tagList" class="tag-list" aria-label="Tags list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="foot-left">© <span id="year"></span> ஜீவா நாராயணன் — All rights reserved</div>
+      <div class="foot-right">
+        <a href="about.html">About</a>
+        <a href="poets.html">Poets</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="backToTop" class="back-to-top hidden" aria-label="Back to top">⬆️</button>
+
+  <script src="js/utils.js"></script>
+  <script src="js/poems.js"></script>
+</body>
+</html>
